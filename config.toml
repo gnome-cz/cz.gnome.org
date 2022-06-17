@@ -1,0 +1,8 @@
+# The URL the site will be built for
+base_url = "https://gnome-cz.github.io"
+
+# Whether to automatically compile all Sass files in the sass directory
+compile_sass = true
+
+[extra]
+# Put all your custom variables here

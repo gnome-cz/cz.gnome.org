@@ -1,0 +1,21 @@
+body {
+	margin: 0;
+	scroll-behavior: smooth;
+	line-height: 1.5;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	font-family: Cantarell, sans-serif;
+	@supports (font-variation-settings: "wght" 400) {
+		font-family: Cantarell Variable, sans-serif;
+	}
+}
+
+.container {
+	max-width: var(--content-width);
+	margin-inline: auto;
+	padding-inline: var(--content-padding);
+}

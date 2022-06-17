@@ -1,0 +1,68 @@
+// Cantarell Variable
+
+@font-face {
+	font-family: Cantarell Variable;
+	font-style: normal;
+	font-weight: 100 900;
+	src: url("/fonts/cantarell-variable.woff2") format("woff2"),
+		url("/fonts/cantarell-variable.woff") format("woff"),
+		url("/fonts/cantarell-variable.otf") format("opentype");
+	font-display: swap;
+}
+
+// Cantarell
+
+@font-face {
+	font-family: Cantarell;
+	font-style: normal;
+	font-weight: 100;
+	src: local("Cantarell Thin"), local("Cantarell-Thin"),
+		url("/fonts/cantarell-thin.woff2") format("woff2"),
+		url("/fonts/cantarell-thin.woff") format("woff"),
+		url("/fonts/cantarell-thin.otf") format("opentype");
+	font-display: swap;
+}
+
+@font-face {
+	font-family: Cantarell;
+	font-style: normal;
+	font-weight: 300;
+	src: local("Cantarell Light"), local("Cantarell-Light"),
+		url("/fonts/cantarell-light.woff2") format("woff2"),
+		url("/fonts/cantarell-light.woff") format("woff"),
+		url("/fonts/cantarell-light.otf") format("opentype");
+	font-display: swap;
+}
+
+@font-face {
+	font-family: Cantarell;
+	font-style: normal;
+	font-weight: 400;
+	src: local("Cantarell Regular"), local("Cantarell-Regular"),
+		url("/fonts/cantarell-regular.woff2") format("woff2"),
+		url("/fonts/cantarell-regular.woff") format("woff"),
+		url("/fonts/cantarell-regular.otf") format("opentype");
+	font-display: swap;
+}
+
+@font-face {
+	font-family: Cantarell;
+	font-style: normal;
+	font-weight: 700;
+	src: local("Cantarell Bold"), local("Cantarell-Bold"),
+		url("/fonts/cantarell-bold.woff2") format("woff2"),
+		url("/fonts/cantarell-bold.woff") format("woff"),
+		url("/fonts/cantarell-bold.otf") format("opentype");
+	font-display: swap;
+}
+
+@font-face {
+	font-family: Cantarell;
+	font-style: normal;
+	font-weight: 800;
+	src: local("Cantarell Extra Bold"), local("Cantarell-ExtraBold"),
+		url("/fonts/cantarell-extra-bold.woff2") format("woff2"),
+		url("/fonts/cantarell-extra-bold.woff") format("woff"),
+		url("/fonts/cantarell-extra-bold.otf") format("opentype");
+	font-display: swap;
+}
