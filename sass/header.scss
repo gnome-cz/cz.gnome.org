@@ -1,9 +1,27 @@
+@mixin hover {
+	border-radius: 0.4em;
+	transition: background-color 0.2s ease;
+
+	&:focus,
+	&:hover,
+	&.active {
+		background-color: #0002;
+		outline: none;
+	}
+}
+
 .header {
 	background-color: var(--clr-primary);
 	color: var(--clr-light);
 	padding-block: 0.625rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 0.625rem;
 
 	nav {
+		width: 100%;
+		position: relative;
 		display: flex;
 		align-items: center;
 		gap: 1.5rem;
@@ -11,7 +29,7 @@
 
 		@media (max-width: 700px) {
 			display: grid;
-			grid-template-columns: auto 1fr auto;
+			grid-template-columns: 1fr auto;
 
 			body:not(.js-enabled) & {
 				grid-template-rows: auto auto;
@@ -22,6 +40,14 @@
 	.logo {
 		margin-inline-end: auto;
 		color: inherit;
+		border-radius: 0.4rem;
+		transition: all 0.2s ease;
+
+		&:focus {
+			outline: none;
+			background-color: #0002;
+			box-shadow: 0 0 0 0.4rem #0002;
+		}
 
 		svg {
 			display: block;
@@ -42,12 +68,32 @@
 		font-weight: 700;
 
 		@media (max-width: 700px) {
-			flex-wrap: wrap;
-			justify-content: center;
-
 			body:not(.js-enabled) & {
 				grid-column: 1 / -1;
 				grid-row-start: 2;
+				flex-wrap: wrap;
+				justify-content: center;
+			}
+
+			body.js-enabled & {
+				position: absolute;
+				inset-block-start: calc(100% + 0.625rem);
+				inset-inline: 0;
+				flex-direction: column;
+				align-items: stretch;
+				gap: 0.25rem;
+				background-color: var(--clr-primary);
+				overflow: hidden;
+				max-height: 0;
+				transition: max-height 0.2s ease;
+			}
+		}
+
+		li {
+			@media (max-width: 700px) {
+				body.js-enabled &:last-child {
+					padding-block-end: 0.625rem;
+				}
 			}
 		}
 
@@ -55,27 +101,113 @@
 			color: currentColor;
 			text-decoration: none;
 			padding: 0.5em 1em;
-			border-radius: 0.4em;
-			transition: background-color 0.2s ease;
+			@include hover();
 
 			@media (max-width: 700px) {
 				display: block;
-			}
 
-			&:hover {
-				background-color: #0002;
+				body.js-enabled & {
+					padding-inline: var(--content-padding);
+					border-radius: 0;
+				}
 			}
 		}
 	}
 
 	.menu-toggler {
 		display: none;
+		place-content: center;
+		aspect-ratio: 1;
+		appearance: none;
+		color: inherit;
+		background: none;
+		border: none;
+		padding-block: 0;
+		padding-inline: 0.4em;
+		cursor: pointer;
+		@include hover();
 
 		@media (max-width: 700px) {
 			grid-column-end: -1;
 
 			body.js-enabled & {
 				display: grid;
+			}
+		}
+	}
+
+	.hamburger {
+		--color: currentColor;
+		position: relative;
+		display: block;
+		width: 1.5rem;
+		aspect-ratio: 12 / 1;
+		background-color: var(--color);
+		transition: background-color 0.2s ease;
+
+		&::before,
+		&::after {
+			--i: 1;
+			content: "";
+			position: absolute;
+			inset: 0;
+			background-color: var(--color);
+			transform: translateY(calc(300% * var(--i)));
+			transition: transform 0.2s ease;
+		}
+
+		&.open {
+			background-color: transparent;
+
+			&::before,
+			&::after {
+				transform: rotate(calc(-45deg * var(--i)));
+			}
+		}
+
+		&::before {
+			--i: -1;
+		}
+	}
+
+	h1 {
+		color: inherit;
+		font-size: 2.4rem;
+		font-weight: 800;
+		line-height: 1.2;
+	}
+
+	h2 {
+		color: inherit;
+		margin-block-start: -1.25rem;
+		padding-block-start: 0.5rem;
+		font-size: 1.5rem;
+		font-weight: 600;
+		line-height: 1.2;
+	}
+
+	.title {
+		text-align: center;
+	}
+
+	.hero {
+		padding-block: 0.5rem;
+		display: grid;
+		gap: 2rem;
+
+		@media (min-width: 700px) {
+			grid-template-columns: repeat(2, 1fr);
+		}
+
+		.text {
+			display: flex;
+			flex-direction: column;
+			gap: 1.25rem;
+			justify-content: center;
+
+			* {
+				margin: 0;
+				padding: 0;
 			}
 		}
 	}

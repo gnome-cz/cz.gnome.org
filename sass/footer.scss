@@ -1,0 +1,12 @@
+.footer {
+	text-align: center;
+
+	margin-block-start: auto;
+	padding-block: 0.8rem;
+	background-color: var(--clr-dark);
+	color: var(--clr-light);
+
+	a {
+		color: inherit;
+	}
+}
