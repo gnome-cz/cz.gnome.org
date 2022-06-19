@@ -1,5 +1,5 @@
 +++
-title = "Získat GNOME"
+title = "Jak začít"
 template = "page.html"
 +++
 
