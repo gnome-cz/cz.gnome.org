@@ -9,7 +9,7 @@
 	border-radius: 100vmax;
 	color: inherit;
 	text-decoration: none;
-	background-image: linear-gradient(0deg, #1a5fb4 0%, #1c71d8 100%);
+	background-color: #0001;
 	font-weight: 700;
 	overflow: hidden;
 	white-space: nowrap;
@@ -18,8 +18,8 @@
 
 	&:focus {
 		outline: none;
-		padding-inline: 1.4rem;
-		box-shadow: 0 0.125rem 0.4rem #0003;
+		padding-inline: 1rem;
+		box-shadow: inset 0 0 1rem #0002, 0 0.125rem 0.4rem #0001;
 		width: var(--width);
 	}
 
