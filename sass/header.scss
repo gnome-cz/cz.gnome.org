@@ -113,10 +113,12 @@
 			}
 		}
 
-		.nav-button {
-			border-radius: 100vmax;
-			background-color: #0001;
-			box-shadow: inset 0 0 1rem #0002, 0 0.125rem 0.4rem #0001;
+		@media (min-width: 700px) {
+			.nav-button {
+				border-radius: 100vmax;
+				background-color: #0001;
+				box-shadow: inset 0 0 1rem #0002, 0 0.125rem 0.4rem #0001;
+			}
 		}
 	}
 
