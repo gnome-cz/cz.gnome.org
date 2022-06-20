@@ -11,7 +11,13 @@
 		border-radius: 50%;
 		aspect-ratio: 1;
 		text-decoration: none;
-		background-color: #0002;
+		background-color: #0003;
+		opacity: 0.8;
+		transition: opacity 0.2s ease;
+
+		&:hover {
+			opacity: 1;
+		}
 	}
 
 	svg,
