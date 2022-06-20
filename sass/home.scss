@@ -1,8 +1,41 @@
+.socials {
+	display: flex;
+	gap: 0.5rem;
+
+	a {
+		display: grid;
+		place-content: center;
+		color: var(--clr-light);
+		font-size: 1.5rem;
+		padding: 0.4em !important;
+		border-radius: 50%;
+		aspect-ratio: 1;
+		text-decoration: none;
+		background-color: #0002;
+	}
+
+	svg,
+	img,
+	i {
+		display: block;
+		color: inherit;
+		height: 1em;
+
+		path {
+			fill: currentColor;
+		}
+	}
+}
+
 .content-home {
 	max-width: 75rem;
 	display: flex;
 	flex-direction: column;
 	gap: 2.5rem;
+
+	hr {
+		margin-block: 0;
+	}
 
 	h3 {
 		font-weight: 400;
