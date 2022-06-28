@@ -5,10 +5,13 @@ body {
 	line-height: 1.5;
 	display: flex;
 	flex-direction: column;
-	gap: 2rem;
 	color: var(--clr-dark);
 	font-family: var(--font-primary);
 	font-size: 12pt;
+}
+
+main {
+	margin-block: 2rem;
 }
 
 *,
