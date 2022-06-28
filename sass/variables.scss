@@ -2,7 +2,20 @@
 	--content-width: 63.75rem;
 	--content-padding: 1.875rem;
 
-	--clr-primary: #3584e4;
+	--font-primary: Inter, sans-serif;
+	--font-accent: Cantarell, sans-serif;
+	@supports (font-variation-settings: normal) {
+		--font-primary: Inter Variable, sans-serif;
+		--font-accent: Cantarell Variable, sans-serif;
+	}
+
+	--clr-primary: #4a86cf;
+	--clr-orange: #ff7800;
+	--clr-purple: #9141ac;
+	--clr-yellow: #ffd500;
+	--clr-green: #33d17a;
+	--clr-red: #e01b24;
 	--clr-light: #ffffff;
-	--clr-dark: #1b1b1b;
+	--clr-grey: #76757a;
+	--clr-dark: #251f32;
 }
