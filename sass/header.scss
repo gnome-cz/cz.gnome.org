@@ -79,9 +79,9 @@ $breakpoint: 750px;
 			}
 
 			body.js-enabled & {
-				position: absolute;
-				inset-block-start: calc(100% + 0.625rem);
-				inset-inline: 0;
+				grid-column: 1 / -1;
+				grid-row-start: 2;
+				margin-inline: calc(var(--content-padding) * -1);
 				flex-direction: column;
 				align-items: stretch;
 				gap: 0.25rem;
