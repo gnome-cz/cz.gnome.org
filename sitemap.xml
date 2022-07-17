@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+        <loc>https://gnome-cz.github.io/</loc>
+    </url>
+    <url>
+        <loc>https://gnome-cz.github.io/community/</loc>
+    </url>
+    <url>
+        <loc>https://gnome-cz.github.io/donate/</loc>
+    </url>
+    <url>
+        <loc>https://gnome-cz.github.io/getting-gnome/</loc>
+    </url>
+    <url>
+        <loc>https://gnome-cz.github.io/mastodon/</loc>
+    </url>
+    <url>
+        <loc>https://gnome-cz.github.io/matrix/</loc>
+    </url>
+    <url>
+        <loc>https://gnome-cz.github.io/twitter/</loc>
+    </url>
+</urlset>

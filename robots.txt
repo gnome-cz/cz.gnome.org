@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://gnome-cz.github.io/sitemap.xml
